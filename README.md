@@ -66,7 +66,7 @@ The microcontroller will wait for the first SML message and then start the Zigbe
 
 ## Zigbee Firmware Over-The-Air (FOTA)
 1. Add the following lines to your zigbee2mqtt configuration:
-```
+```yaml
 ota:
   zigbee_ota_override_index_location: custom_ota_index.json
 ```
@@ -75,9 +75,9 @@ ota:
 ```json
 [
     {
-        "url": "127F-0141-01020004-SMZ.zigbee"
+        "url": "127F-0141-00010000-SMZ.zigbee"
     }
 ]
 ```
 
-3. Place the `127F-0141-01020004-SMZ.zigbee` file in the zigbee2mqtt directory, containing a new firmware version.
+3. Place the `127F-0141-00010000-SMZ.zigbee` file in the zigbee2mqtt directory, containing a new firmware version.
