@@ -10,7 +10,7 @@ Follow the instructions below to set up the development environment, build the a
 
 
 ## Prerequisites
-- Install `west` and the Nordic SDK
+- Install ``west`` and the Nordic SDK
 - Clone this repository and initialize the git submodules
 
 ## Build and Flash
@@ -20,6 +20,8 @@ Follow the instructions below to set up the development environment, build the a
 west build -b xiao_ble
 ```
 3. Flash the firmware to the device using a Raspberry Pi connected to the SWD ports on the XIAO. Use the following pin setup:
+
+
 |   Raspberry Pi   |  XIAO  |
 |:----------------:|:------:|
 |     any 3.3V     |   3V3  |
@@ -50,6 +52,8 @@ external_converters:
 
 ## Assembling the Hardware
 1. Connect the Seeed XIAO nRF52840 to the Volkszähler Hichi Smart Meter TTL using the following connections:
+
+
 | Hichi | XIAO |
 |:-----:|:----:|
 |  VCC  |  3V3 |
