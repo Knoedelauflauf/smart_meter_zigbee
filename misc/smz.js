@@ -13,7 +13,7 @@ const definition = {
     description: 'Zigbee Smart Meter Interface', // Description of the device, copy from vendor site. (only used for documentation and startup logging)
     fromZigbee: [fz.electrical_measurement, fz.metering], // We will add this later
     toZigbee: [], // Should be empty, unless device can be controlled (e.g. lights, switches).
-    exposes: [e.energy(), e.produced_energy(), e.power(), e.ac_frequency(), e.current(), e.current_phase_b(), e.current_phase_c(), e.voltage(), e.voltage_phase_b(), e.voltage_phase_c(),], // Defines what this device exposes, used for e.g. Home Assistant discovery and in the frontend
+    exposes: [e.energy(), e.power(), e.ac_frequency(), e.current(), e.current_phase_b(), e.current_phase_c(), e.voltage(), e.voltage_phase_b(), e.voltage_phase_c(),], // Defines what this device exposes, used for e.g. Home Assistant discovery and in the frontend
     configure: async (device, coordinatorEndpoint, logger) => {
         const endpoint = device.getEndpoint(10);
         try {
